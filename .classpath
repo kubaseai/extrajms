@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/user/kafka_2.11-0.11.0.0/libs/kafka-clients-0.11.0.0.jar"/>
+	<classpathentry kind="lib" path="/home/user/kafka_2.11-0.11.0.0/libs/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="/home/user/kafka_2.11-0.11.0.0/libs/slf4j-log4j12-1.7.25.jar"/>
+	<classpathentry kind="lib" path="/home/user/kafka_2.11-0.11.0.0/libs/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/home/user/TIBCO_HOME/ems/8.3/lib/tibjms.jar"/>
+	<classpathentry kind="lib" path="/home/user/TIBCO_HOME/bw/5.13/hotfix/lib/jms-2.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
