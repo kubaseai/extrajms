@@ -1,5 +1,5 @@
 # extrajms
-This JMS client for Apache Kafka. In addition it is JMS client for Tibco EMS using original libs, but with ems:// or tibjms2:// url. Now explanation why tibjms2:// - Tibco EMS can run in JMS 2.0 mode, but Tibco BusinessWorks 5.x cannot, so the only way to consume the same topic with many sessions is to wrap JMS 2.0 topics as JMS 1.1 queue (tada!).
+This is JMS client for Apache Kafka. In addition it is JMS client for Tibco EMS using original libs, but with ems:// or tibjms2:// url. Now explanation why tibjms2:// - Tibco EMS can run in JMS 2.0 mode, but Tibco BusinessWorks 5.x cannot, so the only way to consume the same topic with many sessions is to wrap JMS 2.0 topics as JMS 1.1 queue (tada!).
 How to use Kafka as JMS?
 
 ```java
