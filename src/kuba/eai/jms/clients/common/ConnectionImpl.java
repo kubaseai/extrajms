@@ -1,5 +1,6 @@
 package kuba.eai.jms.clients.common;
 
+import java.lang.reflect.Constructor;
 import java.util.HashMap;
 
 import javax.jms.Connection;
@@ -19,20 +20,21 @@ public abstract class ConnectionImpl implements Connection,QueueConnection,Topic
 	
 	private static void registerImpl(String proto, String className) {
 		try {
-			implementations.put(proto, (ConnectionImpl) Class.forName(className).getDeclaredConstructors()[0].newInstance());
+			Constructor<?> ctor = Class.forName(className).getDeclaredConstructor();
+			ctor.setAccessible(true);
+			implementations.put(proto, (ConnectionImpl) ctor.newInstance()); 
 		}
 		catch (Throwable t) {
 			System.out.println("Protocol "+proto+" is not enabled, problem with class "+className);
+			t.printStackTrace();
 		}
 	}
 	
 	static {
 		registerImpl("kafka", "kuba.eai.jms.clients.kafka.KafkaConnection");
-		registerImpl("ems", "kuba.eai.jms.clients.ems.EmsConnection");
-		registerImpl("tibjms2", "kuba.eai.jms.clients.ems.Tibjms2Connection");
-	}
-	
-	public ConnectionImpl() {}
+//		registerImpl("ems", "kuba.eai.jms.clients.ems.EmsConnection");
+//		registerImpl("tibjms2", "kuba.eai.jms.clients.ems.Tibjms2Connection");
+	}	
 	
 	public static ConnectionImpl create(String impl, int i, String url, String user, String pass, String clientId,
 			HashMap<String, String> properties) throws JMSException {
