@@ -17,15 +17,14 @@ import kuba.eai.jms.clients.common.InitialContextFactory;
 
 public class Consistency {
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) throws Exception {
 		InitialContextFactory icf = new InitialContextFactory();			
-		Hashtable h = new Hashtable<>();
+		Hashtable<? super Object,? super Object> h = new Hashtable<>();
 		h.put(InitialContext.PROVIDER_URL, "kafka://192.168.0.1:9092,127.0.0.1:9092,acks=all");
 		InitialContext ctx = icf.getInitialContext(h);
 		QueueConnectionFactory qcfSend = (QueueConnectionFactory) ctx.lookup("QueueConnectionFactory");
 		QueueConnection qcSend = qcfSend.createQueueConnection();
-		Hashtable hh = new Hashtable<>();
+		Hashtable<? super Object,? super Object> hh = new Hashtable<>();
 		hh.put(InitialContext.PROVIDER_URL, "kafka://192.168.0.1:9092");
 		QueueConnectionFactory qcfRecv = (QueueConnectionFactory) icf.getInitialContext(hh).lookup("QueueConnectionFactory");
 		QueueConnection qcRecv = qcfRecv.createQueueConnection();

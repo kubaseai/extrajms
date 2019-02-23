@@ -26,14 +26,13 @@ public class TheConnectionMetaData implements ConnectionMetaData {
 		return getJMSMajorVersion() + "." + getJMSMinorVersion();
 	}
 
-	@SuppressWarnings("rawtypes")
-	public Enumeration getJMSXPropertyNames() throws JMSException {
-		return new Enumeration() {
+	public Enumeration<String> getJMSXPropertyNames() throws JMSException {
+		return new Enumeration<String>() {
 			public boolean hasMoreElements() {
 				return false;
 			}
 
-			public Object nextElement() {
+			public String nextElement() {
 				return null;
 			}
 		};

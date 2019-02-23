@@ -8,16 +8,14 @@ import javax.naming.NamingException;
 
 public class InitialContextFactory implements javax.naming.spi.InitialContextFactory {
 
-		@SuppressWarnings("rawtypes")
-		public InitialContext getInitialContext(Hashtable map) throws NamingException {
+		public InitialContext getInitialContext(Hashtable<?,?> map) throws NamingException {
 			return new InitialContext(map);
 		}
 		
-		@SuppressWarnings({ "rawtypes", "unchecked" })
 		public final static void main(String[] args) throws NamingException, JMSException {
 			// https://github.com/danielwegener/logback-kafka-appender/issues/44
 			InitialContextFactory icf = new InitialContextFactory();			
-			Hashtable h = new Hashtable<>();
+			Hashtable<? super Object,? super Object> h = new Hashtable<>();
 			h.put(InitialContext.PROVIDER_URL, "kafka://10.87.40.80:9092,10.87.40.148:9092,acks=2");
 			InitialContext ctx = icf.getInitialContext(h);
 			QueueConnectionFactory qcf = (QueueConnectionFactory) ctx.lookup("QueueConnectionFactory");

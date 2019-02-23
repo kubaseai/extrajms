@@ -3,148 +3,112 @@ package kuba.eai.jms.clients.common;
 import java.util.Hashtable;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import javax.naming.Binding;
 import javax.naming.Context;
 import javax.naming.Name;
+import javax.naming.NameClassPair;
 import javax.naming.NameParser;
 import javax.naming.NamingEnumeration;
 import javax.naming.NamingException;
 
-
-@SuppressWarnings({ "rawtypes", "unchecked" })
 public class InitialContext implements Context {
 	
 	public static final String CLIENT_ID = "CLIENT_ID";
 	public static final String ENABLE_LOAD_BALANCING = "ENABLE_LB";
 	public static final String CONN_TYPE = "CONN_TYPE";
-	private Hashtable params = new Hashtable();
+	private final static NamingException NOT_SUPPORTED = new NamingException("Not supported at client side");	
+	private Hashtable<? super Object,? super Object> params = null;
 
-	public InitialContext(Hashtable map) {
-		this.params.putAll(map);
+	public InitialContext(Hashtable<?,?> map) {
+		this.params = new Hashtable<>(map);
 	}
 
 	public Object lookup(Name name) throws NamingException {
-		if (name==null)
-			return null;
-		String nm = name.toString().toLowerCase();
-		if (nm.contains("connection") && nm.contains("factory"))
-			return new TheConnectionFactory(params, nm.contains("queue"), nm.contains("topic"));
-		else if (nm.contains("connection"))
-			return new TheConnection(params);		
-		return new TheDestination(name.toString());			
+		return name==null ? null : lookup(name.toString());			
 	}
 
 	public Object lookup(String name) throws NamingException {
 		if (name==null)
 			return null;
-		String nm = name.toString().toLowerCase();
+		String nm = name.toLowerCase();
 		if (nm.contains("connection") && nm.contains("factory"))
 			return new TheConnectionFactory(params, nm.contains("queue"), nm.contains("topic"));
 		else if (nm.contains("connection"))
 			return new TheConnection(params);		
-		return new TheDestination(name);
-		
+		return new TheDestination(name);		
 	}
-
+	
 	public void bind(Name name, Object obj) throws NamingException {
-		throw new NamingException("Not supported at client side");		
+		throw NOT_SUPPORTED;	
 	}
 	public void bind(String name, Object obj) throws NamingException {
-		throw new NamingException("Not supported at client side");		
+		throw NOT_SUPPORTED;	
 	}
 	public void rebind(Name name, Object obj) throws NamingException {
-		throw new NamingException("Not supported at client side");		
+		throw NOT_SUPPORTED;		
 	}
 	public void rebind(String name, Object obj) throws NamingException {
-		throw new NamingException("Not supported at client side");		
+		throw NOT_SUPPORTED;		
 	}
 	public void unbind(Name name) throws NamingException {
-		throw new NamingException("Not supported at client side");		
+		throw NOT_SUPPORTED;	
 	}
 	public void unbind(String name) throws NamingException {
-		throw new NamingException("Not supported at client side");		
+		throw NOT_SUPPORTED;		
 	}
 	public void rename(Name oldName, Name newName) throws NamingException {
-		throw new NamingException("Not supported at client side");		
+		throw NOT_SUPPORTED;		
 	}
 	public void rename(String oldName, String newName) throws NamingException {
-		throw new NamingException("Not supported at client side");		
+		throw NOT_SUPPORTED;	
 	}
 
-	public NamingEnumeration list(Name name) throws NamingException {
+	public NamingEnumeration<NameClassPair> list(final Name name) throws NamingException {
+		return list(name!=null ? name.toString() : null);
+	}
+
+	public NamingEnumeration<NameClassPair> list(final String name) throws NamingException {
 		final Object obj = lookup(name);
-		final AtomicBoolean iterated = new AtomicBoolean(false);
-		return new NamingEnumeration() {
+		final AtomicBoolean overIteration = new AtomicBoolean(obj==null);
+		return new NamingEnumeration<NameClassPair>() {
 			
-			public Object nextElement() {
-				if (!iterated.get()) {
-					iterated.set(true);
-					return obj;					
+			public NameClassPair nextElement() {
+				if (!overIteration.get()) {
+					overIteration.set(true);
+					return new NameClassPair(name, obj.getClass().getName());				
 				}
 				return null;
 			}			
 			public boolean hasMoreElements() {
-				return !iterated.get();
+				return !overIteration.get();
 			}			
-			public Object next() throws NamingException {
-				if (!iterated.get()) {
-					iterated.set(true);
-					return obj;					
-				}
-				return null;
+			public NameClassPair next() throws NamingException {
+				return nextElement();
 			}			
 			public boolean hasMore() throws NamingException {
-				return !iterated.get();
+				return !overIteration.get();
 			}			
 			public void close() throws NamingException {}
 		};
 	}
 
-	public NamingEnumeration list(String name) throws NamingException {
-		final Object obj = lookup(name);
-		final AtomicBoolean iterated = new AtomicBoolean(false);
-		return new NamingEnumeration() {
-			
-			public Object nextElement() {
-				if (!iterated.get()) {
-					iterated.set(true);
-					return obj;					
-				}
-				return null;
-			}			
-			public boolean hasMoreElements() {
-				return !iterated.get();
-			}			
-			public Object next() throws NamingException {
-				if (!iterated.get()) {
-					iterated.set(true);
-					return obj;					
-				}
-				return null;
-			}			
-			public boolean hasMore() throws NamingException {
-				return !iterated.get();
-			}			
-			public void close() throws NamingException {}
-		};
+	public NamingEnumeration<Binding> listBindings(Name name) throws NamingException {
+		throw NOT_SUPPORTED;	
 	}
-
-	public NamingEnumeration listBindings(Name name) throws NamingException {
-		throw new NamingException("Not supported at client side");	
-	}
-	public NamingEnumeration listBindings(String name) throws NamingException {
-		throw new NamingException("Not supported at client side");	
+	public NamingEnumeration<Binding> listBindings(String name) throws NamingException {
+		throw NOT_SUPPORTED;	
 	}
 	public void destroySubcontext(Name name) throws NamingException {
-		throw new NamingException("Not supported at client side");		
+		throw NOT_SUPPORTED;	
 	}
 	public void destroySubcontext(String name) throws NamingException {
-		throw new NamingException("Not supported at client side");		
+		throw NOT_SUPPORTED;	
 	}
 	public Context createSubcontext(Name name) throws NamingException {
-		throw new NamingException("Not supported at client side");
+		throw NOT_SUPPORTED;
 	}
 	public Context createSubcontext(String name) throws NamingException {
-		throw new NamingException("Not supported at client side");
+		throw NOT_SUPPORTED;
 	}
 	public Object lookupLink(Name name) throws NamingException {
 		return lookup(name);
@@ -154,28 +118,28 @@ public class InitialContext implements Context {
 	}
 
 	public NameParser getNameParser(Name name) throws NamingException {
-		throw new NamingException("Not supported");
+		throw NOT_SUPPORTED;
 	}
 	public NameParser getNameParser(String name) throws NamingException {
-		throw new NamingException("Not supported");
+		throw NOT_SUPPORTED;
 	}
 	public Name composeName(Name name, Name prefix) throws NamingException {
-		throw new NamingException("Not supported");
+		throw NOT_SUPPORTED;
 	}
 	public String composeName(String name, String prefix)
 			throws NamingException {
-		throw new NamingException("Not supported");
+		throw NOT_SUPPORTED;
 	}
 
 	public Object addToEnvironment(String propName, Object propVal)
 			throws NamingException {
-		throw new NamingException("Not supported at client side");
+		return params.put(propName, propVal);
 	}
 	public Object removeFromEnvironment(String propName) throws NamingException {
-		throw new NamingException("Not supported at client side");
+		return params.remove(propName);
 	}
 
-	public Hashtable getEnvironment() throws NamingException {
+	public Hashtable<?,?> getEnvironment() throws NamingException {
 		return params;
 	}
 

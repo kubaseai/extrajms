@@ -12,19 +12,18 @@ import javax.jms.TopicConnection;
 import javax.jms.TopicConnectionFactory;
 
 
-@SuppressWarnings({"rawtypes", "unchecked"})
 public class TheConnectionFactory implements ConnectionFactory,QueueConnectionFactory,TopicConnectionFactory {
 
-	protected Hashtable params = null;
+	protected Hashtable<? super Object,? super Object> params = null;
 	private int kind = 0;
 	
-	public TheConnectionFactory(Hashtable params, boolean q, boolean t) {
-		this.params = params!=null ? params : new Hashtable();	
+	public TheConnectionFactory(Hashtable<?,?> params, boolean q, boolean t) {
+		this.params = new Hashtable<>(params);	
 		kind = q ? 1 : (t? 2 : 0);
 	}
 
 	public TheConnectionFactory(String url) {
-		this((Hashtable)null, false, false);
+		this(null, false, false);
 		if (url!=null)
 			params.put(InitialContext.PROVIDER_URL, url);
 		params.put(InitialContext.CONN_TYPE, kind);

@@ -19,7 +19,7 @@ public abstract class ConnectionImpl implements Connection,QueueConnection,Topic
 	
 	private static void registerImpl(String proto, String className) {
 		try {
-			implementations.put(proto, (ConnectionImpl) Class.forName(className).newInstance());
+			implementations.put(proto, (ConnectionImpl) Class.forName(className).getDeclaredConstructors()[0].newInstance());
 		}
 		catch (Throwable t) {
 			System.out.println("Protocol "+proto+" is not enabled, problem with class "+className);
@@ -31,6 +31,8 @@ public abstract class ConnectionImpl implements Connection,QueueConnection,Topic
 		registerImpl("ems", "kuba.eai.jms.clients.ems.EmsConnection");
 		registerImpl("tibjms2", "kuba.eai.jms.clients.ems.Tibjms2Connection");
 	}
+	
+	public ConnectionImpl() {}
 	
 	public static ConnectionImpl create(String impl, int i, String url, String user, String pass, String clientId,
 			HashMap<String, String> properties) throws JMSException {

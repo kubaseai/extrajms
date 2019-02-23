@@ -12,10 +12,9 @@ import kuba.eai.jms.clients.common.InitialContextFactory;
 
 public class CtxTest {
 	
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public final static void main(String[] args) throws Throwable {
 		InitialContextFactory icf = new InitialContextFactory();			
-		Hashtable h = new Hashtable<>();
+		Hashtable<? super Object,? super Object> h = new Hashtable<>();
 		h.put(InitialContext.PROVIDER_URL, "ems://127.0.0.1:7222");
 		QueueConnectionFactory recv = (QueueConnectionFactory) icf.getInitialContext(h).lookup("QueueConnectionFactory");
 		QueueConnection qc = recv.createQueueConnection();

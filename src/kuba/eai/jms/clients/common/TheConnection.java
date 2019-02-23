@@ -99,8 +99,7 @@ public class TheConnection implements Connection,QueueConnection,TopicConnection
 		}
 	}
 
-	@SuppressWarnings("rawtypes")
-	public TheConnection(Hashtable params) {
+	public TheConnection(Hashtable<?,?> params) {
 		String url = (String) params.get(InitialContext.PROVIDER_URL);
 		user = (String) params.get(InitialContext.SECURITY_PRINCIPAL);
 		pass = (String) params.get(InitialContext.SECURITY_CREDENTIALS);

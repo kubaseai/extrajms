@@ -13,10 +13,9 @@ public class Logger {
 		public final static Logger LOGGER = new Logger();
 	}
 	
-	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private Logger() {
 		try {
-			Class clazz = Class.forName("org.apache.log4j.Logger");
+			Class<?> clazz = Class.forName("org.apache.log4j.Logger");
 			objLogger = clazz.getDeclaredMethod("getLogger", new Class[] {String.class})
 				.invoke(null, new Object[]{"bw.logger"});
 			debug = clazz.getMethod("info", new Class[]{Object.class});

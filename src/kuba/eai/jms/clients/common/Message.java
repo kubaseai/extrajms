@@ -462,10 +462,10 @@ public class Message implements javax.jms.Message, TextMessage, Serializable {
 		return sb.toString();
 	}
 
-	@SuppressWarnings("unchecked")
+	@Override
 	public <T> T getBody(Class<T> c) throws JMSException {
 		if (String.class.equals(c))
-			return (T) getText();
+			return c.cast(getText());
 		return null;
 	}
 
@@ -481,6 +481,7 @@ public class Message implements javax.jms.Message, TextMessage, Serializable {
 		}
 	}
 	
+	@Override
 	public boolean isBodyAssignableTo(@SuppressWarnings("rawtypes") Class c) throws JMSException {
 		return String.class.equals(c);
 	}

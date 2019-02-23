@@ -17,10 +17,9 @@ import kuba.eai.jms.clients.common.InitialContextFactory;
 
 public class Consistency2 {
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) throws Exception {
 		InitialContextFactory icf = new InitialContextFactory();			
-		Hashtable h = new Hashtable<>();
+		Hashtable<? super Object,? super Object> h = new Hashtable<>();
 		h.put(InitialContext.PROVIDER_URL, "kafka://10.0.2.15:9092,192.168.0.1:9092,acks=all");
 		InitialContext ctx = icf.getInitialContext(h);
 		QueueConnectionFactory qcfSend = (QueueConnectionFactory) ctx.lookup("QueueConnectionFactory");
