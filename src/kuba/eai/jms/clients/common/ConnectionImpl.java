@@ -36,8 +36,6 @@ public abstract class ConnectionImpl implements Connection,QueueConnection,Topic
 //		registerImpl("tibjms2", "kuba.eai.jms.clients.ems.Tibjms2Connection");
 	}
 	
-	public ConnectionImpl() {}
-	
 	public static ConnectionImpl create(String impl, int i, String url, String user, String pass, String clientId,
 			HashMap<String, String> properties) throws JMSException {
 		if (impl==null)
