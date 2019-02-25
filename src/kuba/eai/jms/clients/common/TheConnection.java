@@ -41,16 +41,17 @@ public class TheConnection implements Connection,QueueConnection,TopicConnection
 	private String pass = null;
 	private String clientId = null;
 	private ExceptionListener excListener = null;
-	private Integer status = new Integer(STATUS_INVALID);	
+	private Integer status = STATUS_INVALID;	
 	private AtomicBoolean running = new AtomicBoolean(false);
 	private Integer connType = null;
 	private HashMap<String,String> properties = new HashMap<>();
 	private String impl = null;
 	private Thread connectionRenewer = null;
+	private Object statusMutex = new Object();
 	private final static boolean enablePinger = false;
 	
 	public void setStatus(int status) {
-		synchronized(this.status) {
+		synchronized(this.statusMutex) {
 			if (this.status==STATUS_ALIVE && status==STATUS_INVALID)
 				Logger.warn("Connection is damaged "+url);
 			this.status = status;			
@@ -58,7 +59,7 @@ public class TheConnection implements Connection,QueueConnection,TopicConnection
 	}	
 	
 	public int getStatus() {
-		synchronized(status) {
+		synchronized(statusMutex) {
 			return status;
 		}		
 	}		

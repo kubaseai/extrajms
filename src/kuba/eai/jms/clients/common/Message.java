@@ -269,7 +269,6 @@ public class Message implements javax.jms.Message, TextMessage, Serializable {
 		catch (IOException ioe) {
 			throw new JMSException("Cannot deserialize JMS Headers: "+ioe);
 		}
-		key = h.getProperty("JMSMessageID");
 		Enumeration<?> en = h.propertyNames();
 		while (en.hasMoreElements()) {
 			String k = en.nextElement().toString();

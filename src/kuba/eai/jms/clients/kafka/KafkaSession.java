@@ -45,6 +45,7 @@ public class KafkaSession implements javax.jms.Session, QueueSession, TopicSessi
 	private ConcurrentLinkedQueue<KafkaConsumer> consumers = new ConcurrentLinkedQueue<>();
 	private ConcurrentHashMap<String,org.apache.kafka.clients.producer.KafkaProducer<String,String>> producersMap = new ConcurrentHashMap<>();
 	private ConcurrentHashMap<KafkaProducer, AtomicReference<Boolean>> trMap = new ConcurrentHashMap<>();
+	private Object producersMutex = new Object();
 	private Properties p = new Properties();
 	private int ackMode = Session.AUTO_ACKNOWLEDGE;
 	private boolean transactional = false;
@@ -379,7 +380,7 @@ public class KafkaSession implements javax.jms.Session, QueueSession, TopicSessi
 		org.apache.kafka.clients.producer.KafkaProducer<String,String> prod = producersMap.get(key);
 		if (prod!=null)
 			return prod;
-		synchronized(producersMap) {
+		synchronized(producersMutex) {
 			prod = producersMap.get(key);
 			if (prod!=null)
 				return prod;

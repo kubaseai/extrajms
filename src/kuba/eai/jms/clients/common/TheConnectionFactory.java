@@ -23,7 +23,7 @@ public class TheConnectionFactory implements ConnectionFactory,QueueConnectionFa
 	}
 
 	public TheConnectionFactory(String url) {
-		this(null, false, false);
+		this(new Hashtable<>(), false, false);
 		if (url!=null)
 			params.put(InitialContext.PROVIDER_URL, url);
 		params.put(InitialContext.CONN_TYPE, kind);
