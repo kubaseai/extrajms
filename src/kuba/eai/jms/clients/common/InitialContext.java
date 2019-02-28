@@ -73,8 +73,7 @@ public class InitialContext implements Context {
 		return new NamingEnumeration<NameClassPair>() {
 			
 			public NameClassPair nextElement() {
-				if (!overIteration.get()) {
-					overIteration.set(true);
+				if (!overIteration.getAndSet(true)) {					
 					return new NameClassPair(name, obj.getClass().getName());				
 				}
 				return null;
