@@ -1,0 +1,9 @@
+kuba.eai.jms.clients.common.InitialContext$1:90,src/main/java/kuba/eai/jms/clients/common/InitialContext.java:90
+kuba.eai.jms.clients.common.InitialContext$1:88,src/main/java/kuba/eai/jms/clients/common/InitialContext.java:88
+kuba.eai.jms.clients.common.InitialContext$1:85,src/main/java/kuba/eai/jms/clients/common/InitialContext.java:85
+kuba.eai.jms.clients.common.InitialContextFactory:9,src/main/java/kuba/eai/jms/clients/common/InitialContextFactory.java:9
+kuba.eai.jms.clients.common.Logger:61,src/main/java/kuba/eai/jms/clients/common/Logger.java:61
+kuba.eai.jms.clients.common.Message:29,src/main/java/kuba/eai/jms/clients/common/Message.java:29
+kuba.eai.jms.clients.common.TheConnection:-1,src/main/java/kuba/eai/jms/clients/common/TheConnection.java:-1
+kuba.eai.jms.clients.ems.Tibjms2TopicSubscriber:-1,src/main/java/kuba/eai/jms/clients/ems/Tibjms2TopicSubscriber.java:-1
+kuba.eai.jms.clients.kafka.KafkaConsumer:-1,src/main/java/kuba/eai/jms/clients/kafka/KafkaConsumer.java:-1

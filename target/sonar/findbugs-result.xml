@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.11" sequence="0" timestamp="1553073997205" analysisTimestamp="1553074191969" release="">
+  <Project>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\ConnectionImpl.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\InitialContext.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\InitialContext$1.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\InitialContextFactory.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\InternalExceptionListener.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\Logger.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\Logger$LoggerHolder.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\Message.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\Message$1.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\MessageAck.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\TheConnection.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\TheConnectionFactory.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\TheConnectionMetaData.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\TheConnectionMetaData$1.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\TheDestination.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\TheQueue.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\TheTempQueue.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\TheTempTopic.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\TheTopic.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\ems\EmsConnection.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\ems\Tibjms2.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\ems\Tibjms2Connection.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\ems\Tibjms2QueueReceiver.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\ems\Tibjms2QueueSender.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\ems\Tibjms2Session.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\ems\Tibjms2TopicAsQueue.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\ems\Tibjms2TopicSubscriber.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\ems\tests\CtxTest.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\ems\tests\Jms2.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\ems\tests\Jms2$1.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\ems\tests\Jms2$2.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\kafka\KafkaConnection.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\kafka\KafkaConsumer.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\kafka\KafkaConsumer$1.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\kafka\KafkaConsumer$2.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\kafka\KafkaProducer.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\kafka\KafkaProducer$1.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\kafka\KafkaSession.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\kafka\tests\Availability.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\kafka\tests\Consistency.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\kafka\tests\Consistency2.class</Jar>
+    <Jar>C:\Users\176507\Tools\_work_\extrajms\target\classes\kuba\eai\jms\clients\common\Logger$1.class</Jar>
+    <AuxClasspathEntry>C:\Users\176507\Tools\_work_\extrajms\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\176507\.m2\repository\org\apache\kafka\kafka-clients\0.11.0.3\kafka-clients-0.11.0.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\176507\.m2\repository\net\jpountz\lz4\lz4\1.3.0\lz4-1.3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\176507\.m2\repository\org\xerial\snappy\snappy-java\1.1.2.6\snappy-java-1.1.2.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\176507\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\176507\.m2\repository\org\slf4j\slf4j-log4j12\1.7.26\slf4j-log4j12-1.7.26.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\176507\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\176507\.m2\repository\javax\jms\javax.jms-api\2.0.1\javax.jms-api-2.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\176507\.m2\repository\tibco-ems\tibjms\4.1\tibjms-4.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\176507\Tools\_work_\extrajms\target\sonar\findbugs\annotations.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\176507\Tools\_work_\extrajms\target\sonar\findbugs\jsr305.jar</AuxClasspathEntry>
+    <WrkDir>C:\Users\176507\Tools\_work_\extrajms\target\sonar</WrkDir>
+  </Project>
+  <BugInstance type="BED_BOGUS_EXCEPTION_DECLARATION" priority="2" rank="7" abbrev="BED" category="CORRECTNESS" instanceHash="15982b26bf992a9d441a508afbf85c13" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Non derivable method declares throwing an exception that isn&apos;t thrown</ShortMessage>
+    <LongMessage>Non derivable method kuba.eai.jms.clients.common.InitialContext$1.close() declares throwing an exception that isn&apos;t thrown</LongMessage>
+    <Class classname="kuba.eai.jms.clients.common.InitialContext$1" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.common.InitialContext$1" start="73" end="90" sourcefile="InitialContext.java" sourcepath="kuba/eai/jms/clients/common/InitialContext.java">
+        <Message>At InitialContext.java:[lines 73-90]</Message>
+      </SourceLine>
+      <Message>In class kuba.eai.jms.clients.common.InitialContext$1</Message>
+    </Class>
+    <Method classname="kuba.eai.jms.clients.common.InitialContext$1" name="close" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.common.InitialContext$1" start="90" end="90" startBytecode="0" endBytecode="42" sourcefile="InitialContext.java" sourcepath="kuba/eai/jms/clients/common/InitialContext.java"/>
+      <Message>In method kuba.eai.jms.clients.common.InitialContext$1.close()</Message>
+    </Method>
+    <SourceLine classname="kuba.eai.jms.clients.common.InitialContext$1" primary="true" start="90" end="90" startBytecode="0" endBytecode="0" sourcefile="InitialContext.java" sourcepath="kuba/eai/jms/clients/common/InitialContext.java">
+      <Message>At InitialContext.java:[line 90]</Message>
+    </SourceLine>
+    <String value="javax.naming.NamingException">
+      <Message>Value javax.naming.NamingException</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="BED_BOGUS_EXCEPTION_DECLARATION" priority="2" rank="7" abbrev="BED" category="CORRECTNESS" instanceHash="653f1b67727380f871611719e3ec1f2d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Non derivable method declares throwing an exception that isn&apos;t thrown</ShortMessage>
+    <LongMessage>Non derivable method kuba.eai.jms.clients.common.InitialContext$1.hasMore() declares throwing an exception that isn&apos;t thrown</LongMessage>
+    <Class classname="kuba.eai.jms.clients.common.InitialContext$1" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.common.InitialContext$1" start="73" end="90" sourcefile="InitialContext.java" sourcepath="kuba/eai/jms/clients/common/InitialContext.java">
+        <Message>At InitialContext.java:[lines 73-90]</Message>
+      </SourceLine>
+      <Message>In class kuba.eai.jms.clients.common.InitialContext$1</Message>
+    </Class>
+    <Method classname="kuba.eai.jms.clients.common.InitialContext$1" name="hasMore" signature="()Z" isStatic="false" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.common.InitialContext$1" start="88" end="88" startBytecode="0" endBytecode="68" sourcefile="InitialContext.java" sourcepath="kuba/eai/jms/clients/common/InitialContext.java"/>
+      <Message>In method kuba.eai.jms.clients.common.InitialContext$1.hasMore()</Message>
+    </Method>
+    <SourceLine classname="kuba.eai.jms.clients.common.InitialContext$1" primary="true" start="88" end="88" startBytecode="0" endBytecode="0" sourcefile="InitialContext.java" sourcepath="kuba/eai/jms/clients/common/InitialContext.java">
+      <Message>At InitialContext.java:[line 88]</Message>
+    </SourceLine>
+    <String value="javax.naming.NamingException">
+      <Message>Value javax.naming.NamingException</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="BED_BOGUS_EXCEPTION_DECLARATION" priority="2" rank="7" abbrev="BED" category="CORRECTNESS" instanceHash="f926dba64c1cee75ef943a0401bab000" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Non derivable method declares throwing an exception that isn&apos;t thrown</ShortMessage>
+    <LongMessage>Non derivable method kuba.eai.jms.clients.common.InitialContext$1.next() declares throwing an exception that isn&apos;t thrown</LongMessage>
+    <Class classname="kuba.eai.jms.clients.common.InitialContext$1" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.common.InitialContext$1" start="73" end="90" sourcefile="InitialContext.java" sourcepath="kuba/eai/jms/clients/common/InitialContext.java">
+        <Message>At InitialContext.java:[lines 73-90]</Message>
+      </SourceLine>
+      <Message>In class kuba.eai.jms.clients.common.InitialContext$1</Message>
+    </Class>
+    <Method classname="kuba.eai.jms.clients.common.InitialContext$1" name="next" signature="()Ljavax/naming/NameClassPair;" isStatic="false" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.common.InitialContext$1" start="85" end="85" startBytecode="0" endBytecode="46" sourcefile="InitialContext.java" sourcepath="kuba/eai/jms/clients/common/InitialContext.java"/>
+      <Message>In method kuba.eai.jms.clients.common.InitialContext$1.next()</Message>
+    </Method>
+    <SourceLine classname="kuba.eai.jms.clients.common.InitialContext$1" primary="true" start="85" end="85" startBytecode="0" endBytecode="0" sourcefile="InitialContext.java" sourcepath="kuba/eai/jms/clients/common/InitialContext.java">
+      <Message>At InitialContext.java:[line 85]</Message>
+    </SourceLine>
+    <String value="javax.naming.NamingException">
+      <Message>Value javax.naming.NamingException</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="NM_SAME_SIMPLE_NAME_AS_INTERFACE" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" instanceHash="b21b2af8cacf99f80466656a2b0c5dbe" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class names shouldn&apos;t shadow simple name of implemented interface</ShortMessage>
+    <LongMessage>The class name kuba.eai.jms.clients.common.InitialContextFactory shadows the simple name of implemented interface javax.naming.spi.InitialContextFactory</LongMessage>
+    <Class classname="kuba.eai.jms.clients.common.InitialContextFactory" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.common.InitialContextFactory" start="9" end="47" sourcefile="InitialContextFactory.java" sourcepath="kuba/eai/jms/clients/common/InitialContextFactory.java">
+        <Message>At InitialContextFactory.java:[lines 9-47]</Message>
+      </SourceLine>
+      <Message>In class kuba.eai.jms.clients.common.InitialContextFactory</Message>
+    </Class>
+    <Class classname="javax.naming.spi.InitialContextFactory">
+      <SourceLine classname="javax.naming.spi.InitialContextFactory">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>In class javax.naming.spi.InitialContextFactory</Message>
+    </Class>
+    <SourceLine classname="kuba.eai.jms.clients.common.InitialContextFactory" start="9" end="47" sourcefile="InitialContextFactory.java" sourcepath="kuba/eai/jms/clients/common/InitialContextFactory.java" synthetic="true">
+      <Message>At InitialContextFactory.java:[lines 9-47]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE" priority="2" rank="7" abbrev="ERRMSG" category="SECURITY" instanceHash="1d8004ae41202f6a40d8e3245a95a7ac" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="209">
+    <ShortMessage>Information Exposure Through An Error Message</ShortMessage>
+    <LongMessage>Possible information exposure through an error message</LongMessage>
+    <Class classname="kuba.eai.jms.clients.common.Logger" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.common.Logger" start="7" end="73" sourcefile="Logger.java" sourcepath="kuba/eai/jms/clients/common/Logger.java">
+        <Message>At Logger.java:[lines 7-73]</Message>
+      </SourceLine>
+      <Message>In class kuba.eai.jms.clients.common.Logger</Message>
+    </Class>
+    <Method classname="kuba.eai.jms.clients.common.Logger" name="_error" signature="(Ljava/lang/String;Ljava/lang/Throwable;)V" isStatic="false" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.common.Logger" start="60" end="63" startBytecode="0" endBytecode="134" sourcefile="Logger.java" sourcepath="kuba/eai/jms/clients/common/Logger.java"/>
+      <Message>In method kuba.eai.jms.clients.common.Logger._error(String, Throwable)</Message>
+    </Method>
+    <SourceLine classname="kuba.eai.jms.clients.common.Logger" primary="true" start="61" end="61" startBytecode="17" endBytecode="17" sourcefile="Logger.java" sourcepath="kuba/eai/jms/clients/common/Logger.java">
+      <Message>At Logger.java:[line 61]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NM_SAME_SIMPLE_NAME_AS_INTERFACE" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" instanceHash="260ab40aad9e51d477df8524983b2904" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class names shouldn&apos;t shadow simple name of implemented interface</ShortMessage>
+    <LongMessage>The class name kuba.eai.jms.clients.common.Message shadows the simple name of implemented interface javax.jms.Message</LongMessage>
+    <Class classname="kuba.eai.jms.clients.common.Message" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.common.Message" start="29" end="490" sourcefile="Message.java" sourcepath="kuba/eai/jms/clients/common/Message.java">
+        <Message>At Message.java:[lines 29-490]</Message>
+      </SourceLine>
+      <Message>In class kuba.eai.jms.clients.common.Message</Message>
+    </Class>
+    <Class classname="javax.jms.Message">
+      <SourceLine classname="javax.jms.Message" sourcefile="Message.java" sourcepath="javax/jms/Message.java">
+        <Message>In Message.java</Message>
+      </SourceLine>
+      <Message>In class javax.jms.Message</Message>
+    </Class>
+    <SourceLine classname="kuba.eai.jms.clients.common.Message" start="29" end="490" sourcefile="Message.java" sourcepath="kuba/eai/jms/clients/common/Message.java" synthetic="true">
+      <Message>At Message.java:[lines 29-490]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_NULL_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" instanceHash="c586225bb7369dd551e0e409e782fa9e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Field only ever set to null</ShortMessage>
+    <LongMessage>Field only ever set to null: kuba.eai.jms.clients.common.TheConnection.connectionRenewer</LongMessage>
+    <Class classname="kuba.eai.jms.clients.common.TheConnection" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.common.TheConnection" start="35" end="374" sourcefile="TheConnection.java" sourcepath="kuba/eai/jms/clients/common/TheConnection.java">
+        <Message>At TheConnection.java:[lines 35-374]</Message>
+      </SourceLine>
+      <Message>In class kuba.eai.jms.clients.common.TheConnection</Message>
+    </Class>
+    <Field classname="kuba.eai.jms.clients.common.TheConnection" name="connectionRenewer" signature="Ljava/lang/Thread;" isStatic="false" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.common.TheConnection" sourcefile="TheConnection.java" sourcepath="kuba/eai/jms/clients/common/TheConnection.java">
+        <Message>In TheConnection.java</Message>
+      </SourceLine>
+      <Message>Field kuba.eai.jms.clients.common.TheConnection.connectionRenewer</Message>
+    </Field>
+    <SourceLine classname="kuba.eai.jms.clients.common.TheConnection" sourcefile="TheConnection.java" sourcepath="kuba/eai/jms/clients/common/TheConnection.java" synthetic="true">
+      <Message>In TheConnection.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_NULL_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" instanceHash="2ffb5cd5f4a48f7f9d113f5ad63bf743" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Field only ever set to null</ShortMessage>
+    <LongMessage>Field only ever set to null: kuba.eai.jms.clients.ems.Tibjms2TopicSubscriber.t</LongMessage>
+    <Class classname="kuba.eai.jms.clients.ems.Tibjms2TopicSubscriber" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.ems.Tibjms2TopicSubscriber" start="12" end="61" sourcefile="Tibjms2TopicSubscriber.java" sourcepath="kuba/eai/jms/clients/ems/Tibjms2TopicSubscriber.java">
+        <Message>At Tibjms2TopicSubscriber.java:[lines 12-61]</Message>
+      </SourceLine>
+      <Message>In class kuba.eai.jms.clients.ems.Tibjms2TopicSubscriber</Message>
+    </Class>
+    <Field classname="kuba.eai.jms.clients.ems.Tibjms2TopicSubscriber" name="t" signature="Ljavax/jms/Topic;" isStatic="false" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.ems.Tibjms2TopicSubscriber" sourcefile="Tibjms2TopicSubscriber.java" sourcepath="kuba/eai/jms/clients/ems/Tibjms2TopicSubscriber.java">
+        <Message>In Tibjms2TopicSubscriber.java</Message>
+      </SourceLine>
+      <Message>Field kuba.eai.jms.clients.ems.Tibjms2TopicSubscriber.t</Message>
+    </Field>
+    <SourceLine classname="kuba.eai.jms.clients.ems.Tibjms2TopicSubscriber" sourcefile="Tibjms2TopicSubscriber.java" sourcepath="kuba/eai/jms/clients/ems/Tibjms2TopicSubscriber.java" synthetic="true">
+      <Message>In Tibjms2TopicSubscriber.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UWF_NULL_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" instanceHash="9d44e97d69dfa33229154a2196199131" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Field only ever set to null</ShortMessage>
+    <LongMessage>Field only ever set to null: kuba.eai.jms.clients.kafka.KafkaConsumer.messageSelector</LongMessage>
+    <Class classname="kuba.eai.jms.clients.kafka.KafkaConsumer" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.kafka.KafkaConsumer" start="29" end="255" sourcefile="KafkaConsumer.java" sourcepath="kuba/eai/jms/clients/kafka/KafkaConsumer.java">
+        <Message>At KafkaConsumer.java:[lines 29-255]</Message>
+      </SourceLine>
+      <Message>In class kuba.eai.jms.clients.kafka.KafkaConsumer</Message>
+    </Class>
+    <Field classname="kuba.eai.jms.clients.kafka.KafkaConsumer" name="messageSelector" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="kuba.eai.jms.clients.kafka.KafkaConsumer" sourcefile="KafkaConsumer.java" sourcepath="kuba/eai/jms/clients/kafka/KafkaConsumer.java">
+        <Message>In KafkaConsumer.java</Message>
+      </SourceLine>
+      <Message>Field kuba.eai.jms.clients.kafka.KafkaConsumer.messageSelector</Message>
+    </Field>
+    <SourceLine classname="kuba.eai.jms.clients.kafka.KafkaConsumer" sourcefile="KafkaConsumer.java" sourcepath="kuba/eai/jms/clients/kafka/KafkaConsumer.java" synthetic="true">
+      <Message>In KafkaConsumer.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="SECURITY">
+    <Description>Security</Description>
+  </BugCategory>
+  <BugPattern type="NM_SAME_SIMPLE_NAME_AS_INTERFACE" abbrev="Nm" category="BAD_PRACTICE">
+    <ShortDescription>Class names shouldn&apos;t shadow simple name of implemented interface</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class/interface has a simple name that is identical to that of an implemented/extended interface, except
+that the interface is in a different package (e.g., <code>alpha.Foo</code> extends <code>beta.Foo</code>).
+This can be exceptionally confusing, create lots of situations in which you have to look at import statements
+to resolve references and creates many
+opportunities to accidentally define methods that do not override methods in their superclasses.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE" abbrev="ERRMSG" category="SECURITY" cweid="209">
+    <ShortDescription>Information Exposure Through An Error Message</ShortDescription>
+    <Details><![CDATA[
+            
+<p>
+The sensitive information may be valuable information on its own (such as a password), or it may be useful for launching other, more deadly attacks. If an attack fails, an attacker may use error information provided by the server to launch another more focused attack. For example, an attempt to exploit a path traversal weakness (CWE-22) might yield the full pathname of the installed application. In turn, this could be used to select the proper number of ".." sequences to navigate to the targeted file. An attack using SQL injection (CWE-89) might not initially succeed, but an error message could reveal the malformed query, which would expose query logic and possibly even passwords or other sensitive information used within the query.
+</p>
+<p>
+    <b>Vulnerable Code:</b><br/>
+<pre>try {
+  out = httpResponse.getOutputStream()
+} catch (Exception e) {
+  e.printStackTrace(out);
+}</pre>
+
+<p>
+<b>References</b><br/>
+<a href="https://cwe.mitre.org/data/definitions/209.html">CWE-209: Information Exposure Through an Error Message</a>
+</p>
+            
+        ]]></Details>
+  </BugPattern>
+  <BugPattern type="UWF_NULL_FIELD" abbrev="UwF" category="CORRECTNESS">
+    <ShortDescription>Field only ever set to null</ShortDescription>
+    <Details><![CDATA[
+
+  <p> All writes to this field are of the constant value null, and thus
+all reads of the field will return null.
+Check for errors, or remove it if it is useless.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="BED_BOGUS_EXCEPTION_DECLARATION" abbrev="BED" category="CORRECTNESS">
+    <ShortDescription>Non derivable method declares throwing an exception that isn&apos;t thrown</ShortDescription>
+    <Details><![CDATA[
+			
+			<p>This method declares that it throws a checked exception that it does not throw. As this method is
+			either a constructor, static method or private method, there is no reason for this method to declare
+			the exception in its throws clause, and just causes calling methods to unnecessarily handle an exception
+			that will never be thrown. The exception in question should be removed from the throws clause.</p>
+			
+		]]></Details>
+  </BugPattern>
+  <BugCode abbrev="BED">
+    <Description>Bogus Exception Declaration</Description>
+  </BugCode>
+  <BugCode abbrev="ERRMSG">
+    <Description>Information Exposure Through An Error Message</Description>
+  </BugCode>
+  <BugCode abbrev="UwF">
+    <Description>Unwritten field</Description>
+  </BugCode>
+  <BugCode abbrev="Nm">
+    <Description>Confusing method name</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 20 Mar 2019 10:26:37 +0100" total_classes="42" referenced_classes="183" total_bugs="9" total_size="2144" num_packages="5" java_version="1.8.0_201" vm_version="25.201-b09" cpu_seconds="27.33" clock_seconds="8.02" peak_mbytes="638.34" alloc_mbytes="3614.50" gc_seconds="0.17" priority_2="9">
+    <FileStats path="kuba/eai/jms/clients/common/ConnectionImpl.java" bugCount="0" size="43"/>
+    <FileStats path="kuba/eai/jms/clients/common/InitialContext.java" bugCount="3" size="101" bugHash="ec4785fab15ff87e3834955c0e5dc557"/>
+    <FileStats path="kuba/eai/jms/clients/common/InitialContextFactory.java" bugCount="1" size="37" bugHash="b3b540a5f4f7953cf5b47f483236a25e"/>
+    <FileStats path="kuba/eai/jms/clients/common/InternalExceptionListener.java" bugCount="0" size="10"/>
+    <FileStats path="kuba/eai/jms/clients/common/Logger.java" bugCount="1" size="60" bugHash="d765552b547bbd48670031cfe03d3798"/>
+    <FileStats path="kuba/eai/jms/clients/common/Message.java" bugCount="1" size="284" bugHash="fe76af21c34d57fc2a93f774b1c5ecf9"/>
+    <FileStats path="kuba/eai/jms/clients/common/MessageAck.java" bugCount="0" size="5"/>
+    <FileStats path="kuba/eai/jms/clients/common/TheConnection.java" bugCount="1" size="195" bugHash="67d818083a445130504670d95e18d081"/>
+    <FileStats path="kuba/eai/jms/clients/common/TheConnectionFactory.java" bugCount="0" size="51"/>
+    <FileStats path="kuba/eai/jms/clients/common/TheConnectionMetaData.java" bugCount="0" size="31"/>
+    <FileStats path="kuba/eai/jms/clients/common/TheDestination.java" bugCount="0" size="14"/>
+    <FileStats path="kuba/eai/jms/clients/common/TheQueue.java" bugCount="0" size="6"/>
+    <FileStats path="kuba/eai/jms/clients/common/TheTempQueue.java" bugCount="0" size="6"/>
+    <FileStats path="kuba/eai/jms/clients/common/TheTempTopic.java" bugCount="0" size="6"/>
+    <FileStats path="kuba/eai/jms/clients/common/TheTopic.java" bugCount="0" size="6"/>
+    <FileStats path="kuba/eai/jms/clients/ems/EmsConnection.java" bugCount="0" size="72"/>
+    <FileStats path="kuba/eai/jms/clients/ems/Tibjms2.java" bugCount="0" size="18"/>
+    <FileStats path="kuba/eai/jms/clients/ems/Tibjms2Connection.java" bugCount="0" size="22"/>
+    <FileStats path="kuba/eai/jms/clients/ems/Tibjms2QueueReceiver.java" bugCount="0" size="28"/>
+    <FileStats path="kuba/eai/jms/clients/ems/Tibjms2QueueSender.java" bugCount="0" size="80"/>
+    <FileStats path="kuba/eai/jms/clients/ems/Tibjms2Session.java" bugCount="0" size="104"/>
+    <FileStats path="kuba/eai/jms/clients/ems/Tibjms2TopicAsQueue.java" bugCount="0" size="15"/>
+    <FileStats path="kuba/eai/jms/clients/ems/Tibjms2TopicSubscriber.java" bugCount="1" size="29" bugHash="2dc7767b3af28b8e34c04a39f8e81e29"/>
+    <FileStats path="kuba/eai/jms/clients/ems/tests/CtxTest.java" bugCount="0" size="14"/>
+    <FileStats path="kuba/eai/jms/clients/ems/tests/Jms2.java" bugCount="0" size="53"/>
+    <FileStats path="kuba/eai/jms/clients/kafka/KafkaConnection.java" bugCount="0" size="110"/>
+    <FileStats path="kuba/eai/jms/clients/kafka/KafkaConsumer.java" bugCount="1" size="182" bugHash="4136aa190de5010e474921f3ea22021d"/>
+    <FileStats path="kuba/eai/jms/clients/kafka/KafkaProducer.java" bugCount="0" size="171"/>
+    <FileStats path="kuba/eai/jms/clients/kafka/KafkaSession.java" bugCount="0" size="261"/>
+    <FileStats path="kuba/eai/jms/clients/kafka/tests/Availability.java" bugCount="0" size="43"/>
+    <FileStats path="kuba/eai/jms/clients/kafka/tests/Consistency.java" bugCount="0" size="44"/>
+    <FileStats path="kuba/eai/jms/clients/kafka/tests/Consistency2.java" bugCount="0" size="43"/>
+    <PackageStats package="kuba.eai.jms.clients.common" total_bugs="7" total_types="20" total_size="855" priority_2="7">
+      <ClassStats class="kuba.eai.jms.clients.common.ConnectionImpl" sourceFile="ConnectionImpl.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.InitialContext" sourceFile="InitialContext.java" interface="false" size="80" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.InitialContext$1" sourceFile="InitialContext.java" interface="false" size="21" bugs="3" priority_2="3"/>
+      <ClassStats class="kuba.eai.jms.clients.common.InitialContextFactory" sourceFile="InitialContextFactory.java" interface="false" size="37" bugs="1" priority_2="1"/>
+      <ClassStats class="kuba.eai.jms.clients.common.InternalExceptionListener" sourceFile="InternalExceptionListener.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.Logger" sourceFile="Logger.java" interface="false" size="53" bugs="1" priority_2="1"/>
+      <ClassStats class="kuba.eai.jms.clients.common.Logger$1" sourceFile="Logger.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.Logger$LoggerHolder" sourceFile="Logger.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.Message" sourceFile="Message.java" interface="false" size="270" bugs="1" priority_2="1"/>
+      <ClassStats class="kuba.eai.jms.clients.common.Message$1" sourceFile="Message.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.MessageAck" sourceFile="MessageAck.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.TheConnection" sourceFile="TheConnection.java" interface="false" size="195" bugs="1" priority_2="1"/>
+      <ClassStats class="kuba.eai.jms.clients.common.TheConnectionFactory" sourceFile="TheConnectionFactory.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.TheConnectionMetaData" sourceFile="TheConnectionMetaData.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.TheConnectionMetaData$1" sourceFile="TheConnectionMetaData.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.TheDestination" sourceFile="TheDestination.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.TheQueue" sourceFile="TheQueue.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.TheTempQueue" sourceFile="TheTempQueue.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.TheTempTopic" sourceFile="TheTempTopic.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.common.TheTopic" sourceFile="TheTopic.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kuba.eai.jms.clients.ems" total_bugs="1" total_types="8" total_size="368" priority_2="1">
+      <ClassStats class="kuba.eai.jms.clients.ems.EmsConnection" sourceFile="EmsConnection.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.ems.Tibjms2" sourceFile="Tibjms2.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.ems.Tibjms2Connection" sourceFile="Tibjms2Connection.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.ems.Tibjms2QueueReceiver" sourceFile="Tibjms2QueueReceiver.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.ems.Tibjms2QueueSender" sourceFile="Tibjms2QueueSender.java" interface="false" size="80" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.ems.Tibjms2Session" sourceFile="Tibjms2Session.java" interface="false" size="104" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.ems.Tibjms2TopicAsQueue" sourceFile="Tibjms2TopicAsQueue.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.ems.Tibjms2TopicSubscriber" sourceFile="Tibjms2TopicSubscriber.java" interface="false" size="29" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="kuba.eai.jms.clients.ems.tests" total_bugs="0" total_types="4" total_size="67">
+      <ClassStats class="kuba.eai.jms.clients.ems.tests.CtxTest" sourceFile="CtxTest.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.ems.tests.Jms2" sourceFile="Jms2.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.ems.tests.Jms2$1" sourceFile="Jms2.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.ems.tests.Jms2$2" sourceFile="Jms2.java" interface="false" size="19" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kuba.eai.jms.clients.kafka" total_bugs="1" total_types="7" total_size="724" priority_2="1">
+      <ClassStats class="kuba.eai.jms.clients.kafka.KafkaConnection" sourceFile="KafkaConnection.java" interface="false" size="110" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.kafka.KafkaConsumer" sourceFile="KafkaConsumer.java" interface="false" size="147" bugs="1" priority_2="1"/>
+      <ClassStats class="kuba.eai.jms.clients.kafka.KafkaConsumer$1" sourceFile="KafkaConsumer.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.kafka.KafkaConsumer$2" sourceFile="KafkaConsumer.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.kafka.KafkaProducer" sourceFile="KafkaProducer.java" interface="false" size="160" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.kafka.KafkaProducer$1" sourceFile="KafkaProducer.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.kafka.KafkaSession" sourceFile="KafkaSession.java" interface="false" size="261" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="kuba.eai.jms.clients.kafka.tests" total_bugs="0" total_types="3" total_size="130">
+      <ClassStats class="kuba.eai.jms.clients.kafka.tests.Availability" sourceFile="Availability.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.kafka.tests.Consistency" sourceFile="Consistency.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="kuba.eai.jms.clients.kafka.tests.Consistency2" sourceFile="Consistency2.java" interface="false" size="43" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1057" invocations="846" avgMicrosecondsPerInvocation="1250" maxMicrosecondsPerInvocation="17741" standardDeviationMicrosecondsPerInvocation="978"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="347" invocations="821" avgMicrosecondsPerInvocation="422" maxMicrosecondsPerInvocation="37245" standardDeviationMicrosecondsPerInvocation="1716"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.TaintDataflowEngine" totalMilliseconds="291" invocations="469" avgMicrosecondsPerInvocation="621" maxMicrosecondsPerInvocation="52592" standardDeviationMicrosecondsPerInvocation="2918"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="181" invocations="477" avgMicrosecondsPerInvocation="379" maxMicrosecondsPerInvocation="30983" standardDeviationMicrosecondsPerInvocation="1621"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="174" invocations="469" avgMicrosecondsPerInvocation="371" maxMicrosecondsPerInvocation="8208" standardDeviationMicrosecondsPerInvocation="932"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="148" invocations="183" avgMicrosecondsPerInvocation="811" maxMicrosecondsPerInvocation="14247" standardDeviationMicrosecondsPerInvocation="1916"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="145" invocations="832" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="16715" standardDeviationMicrosecondsPerInvocation="669"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="141" invocations="465" avgMicrosecondsPerInvocation="305" maxMicrosecondsPerInvocation="7077" standardDeviationMicrosecondsPerInvocation="795"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="135" invocations="490" avgMicrosecondsPerInvocation="276" maxMicrosecondsPerInvocation="14103" standardDeviationMicrosecondsPerInvocation="798"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="134" invocations="464" avgMicrosecondsPerInvocation="289" maxMicrosecondsPerInvocation="10575" standardDeviationMicrosecondsPerInvocation="672"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectStatistics" totalMilliseconds="124" invocations="183" avgMicrosecondsPerInvocation="679" maxMicrosecondsPerInvocation="17183" standardDeviationMicrosecondsPerInvocation="1917"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="121" invocations="470" avgMicrosecondsPerInvocation="258" maxMicrosecondsPerInvocation="16805" standardDeviationMicrosecondsPerInvocation="833"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="108" invocations="183" avgMicrosecondsPerInvocation="591" maxMicrosecondsPerInvocation="7039" standardDeviationMicrosecondsPerInvocation="1089"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="81" invocations="380" avgMicrosecondsPerInvocation="213" maxMicrosecondsPerInvocation="5021" standardDeviationMicrosecondsPerInvocation="475"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="77" invocations="470" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="41008" standardDeviationMicrosecondsPerInvocation="1890"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.command.CommandInjectionDetector" totalMilliseconds="75" invocations="42" avgMicrosecondsPerInvocation="1797" maxMicrosecondsPerInvocation="60195" standardDeviationMicrosecondsPerInvocation="9134"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectNullableMethodStatus" totalMilliseconds="68" invocations="183" avgMicrosecondsPerInvocation="376" maxMicrosecondsPerInvocation="13135" standardDeviationMicrosecondsPerInvocation="1314"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="67" invocations="350" avgMicrosecondsPerInvocation="192" maxMicrosecondsPerInvocation="20500" standardDeviationMicrosecondsPerInvocation="1138"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="64" invocations="42" avgMicrosecondsPerInvocation="1528" maxMicrosecondsPerInvocation="38734" standardDeviationMicrosecondsPerInvocation="5863"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="51" invocations="785" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="1891" standardDeviationMicrosecondsPerInvocation="147"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.password.ConstantPasswordDetector" totalMilliseconds="51" invocations="42" avgMicrosecondsPerInvocation="1223" maxMicrosecondsPerInvocation="36558" standardDeviationMicrosecondsPerInvocation="5537"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="47" invocations="183" avgMicrosecondsPerInvocation="257" maxMicrosecondsPerInvocation="6408" standardDeviationMicrosecondsPerInvocation="696"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="47" invocations="183" avgMicrosecondsPerInvocation="257" maxMicrosecondsPerInvocation="8925" standardDeviationMicrosecondsPerInvocation="768"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="45" invocations="42" avgMicrosecondsPerInvocation="1091" maxMicrosecondsPerInvocation="14040" standardDeviationMicrosecondsPerInvocation="2412"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="41" invocations="7094" avgMicrosecondsPerInvocation="5" maxMicrosecondsPerInvocation="4887" standardDeviationMicrosecondsPerInvocation="66"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="40" invocations="183" avgMicrosecondsPerInvocation="221" maxMicrosecondsPerInvocation="12223" standardDeviationMicrosecondsPerInvocation="1053"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.StringifiedTypes" totalMilliseconds="39" invocations="42" avgMicrosecondsPerInvocation="934" maxMicrosecondsPerInvocation="33050" standardDeviationMicrosecondsPerInvocation="5019"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.AssertionMethodsFactory" totalMilliseconds="35" invocations="41" avgMicrosecondsPerInvocation="863" maxMicrosecondsPerInvocation="33473" standardDeviationMicrosecondsPerInvocation="5156"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="33" invocations="469" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="1971" standardDeviationMicrosecondsPerInvocation="190"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="32" invocations="183" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="6761" standardDeviationMicrosecondsPerInvocation="589"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="31" invocations="42" avgMicrosecondsPerInvocation="748" maxMicrosecondsPerInvocation="6521" standardDeviationMicrosecondsPerInvocation="1262"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="30" invocations="15658" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="857" standardDeviationMicrosecondsPerInvocation="7"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UseSplit" totalMilliseconds="30" invocations="42" avgMicrosecondsPerInvocation="717" maxMicrosecondsPerInvocation="22456" standardDeviationMicrosecondsPerInvocation="3403"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="28" invocations="42" avgMicrosecondsPerInvocation="668" maxMicrosecondsPerInvocation="3689" standardDeviationMicrosecondsPerInvocation="791"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="27" invocations="183" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="3796" standardDeviationMicrosecondsPerInvocation="386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="27" invocations="470" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="6640" standardDeviationMicrosecondsPerInvocation="342"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="26" invocations="42" avgMicrosecondsPerInvocation="642" maxMicrosecondsPerInvocation="5692" standardDeviationMicrosecondsPerInvocation="1118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="26" invocations="183" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="2348" standardDeviationMicrosecondsPerInvocation="315"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UseEnumCollections" totalMilliseconds="26" invocations="42" avgMicrosecondsPerInvocation="622" maxMicrosecondsPerInvocation="19897" standardDeviationMicrosecondsPerInvocation="3016"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="25" invocations="26" avgMicrosecondsPerInvocation="969" maxMicrosecondsPerInvocation="1755" standardDeviationMicrosecondsPerInvocation="422"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.InefficientStringBuffering" totalMilliseconds="24" invocations="42" avgMicrosecondsPerInvocation="579" maxMicrosecondsPerInvocation="6508" standardDeviationMicrosecondsPerInvocation="1325"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.file.PathTraversalDetector" totalMilliseconds="24" invocations="42" avgMicrosecondsPerInvocation="576" maxMicrosecondsPerInvocation="3377" standardDeviationMicrosecondsPerInvocation="788"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectMethodsReturningImmutableCollections" totalMilliseconds="24" invocations="183" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="4981" standardDeviationMicrosecondsPerInvocation="487"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ListIndexedIterating" totalMilliseconds="22" invocations="42" avgMicrosecondsPerInvocation="544" maxMicrosecondsPerInvocation="18815" standardDeviationMicrosecondsPerInvocation="2860"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.sql.SqlInjectionDetector" totalMilliseconds="22" invocations="42" avgMicrosecondsPerInvocation="531" maxMicrosecondsPerInvocation="7504" standardDeviationMicrosecondsPerInvocation="1207"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="22" invocations="459" avgMicrosecondsPerInvocation="47" maxMicrosecondsPerInvocation="1505" standardDeviationMicrosecondsPerInvocation="133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="21" invocations="42" avgMicrosecondsPerInvocation="507" maxMicrosecondsPerInvocation="3260" standardDeviationMicrosecondsPerInvocation="724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="21" invocations="42" avgMicrosecondsPerInvocation="503" maxMicrosecondsPerInvocation="2892" standardDeviationMicrosecondsPerInvocation="555"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="21" invocations="42" avgMicrosecondsPerInvocation="502" maxMicrosecondsPerInvocation="3661" standardDeviationMicrosecondsPerInvocation="678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="21" invocations="464" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="994" standardDeviationMicrosecondsPerInvocation="88"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="20" invocations="42" avgMicrosecondsPerInvocation="490" maxMicrosecondsPerInvocation="3046" standardDeviationMicrosecondsPerInvocation="702"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="20" invocations="42" avgMicrosecondsPerInvocation="484" maxMicrosecondsPerInvocation="9297" standardDeviationMicrosecondsPerInvocation="1406"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.PresizeCollections" totalMilliseconds="20" invocations="42" avgMicrosecondsPerInvocation="481" maxMicrosecondsPerInvocation="7005" standardDeviationMicrosecondsPerInvocation="1273"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="20" invocations="183" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="2133" standardDeviationMicrosecondsPerInvocation="254"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.redirect.UnvalidatedRedirectDetector" totalMilliseconds="20" invocations="42" avgMicrosecondsPerInvocation="479" maxMicrosecondsPerInvocation="4320" standardDeviationMicrosecondsPerInvocation="798"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UnnecessaryStoreBeforeReturn" totalMilliseconds="20" invocations="42" avgMicrosecondsPerInvocation="477" maxMicrosecondsPerInvocation="16200" standardDeviationMicrosecondsPerInvocation="2460"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="19" invocations="42" avgMicrosecondsPerInvocation="464" maxMicrosecondsPerInvocation="5506" standardDeviationMicrosecondsPerInvocation="1043"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SillynessPotPourri" totalMilliseconds="19" invocations="42" avgMicrosecondsPerInvocation="460" maxMicrosecondsPerInvocation="6370" standardDeviationMicrosecondsPerInvocation="1043"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.script.OgnlInjectionDetector" totalMilliseconds="19" invocations="42" avgMicrosecondsPerInvocation="452" maxMicrosecondsPerInvocation="2760" standardDeviationMicrosecondsPerInvocation="646"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SyncCollectionIterators" totalMilliseconds="18" invocations="42" avgMicrosecondsPerInvocation="450" maxMicrosecondsPerInvocation="12088" standardDeviationMicrosecondsPerInvocation="1828"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.xpath.XPathInjectionDetector" totalMilliseconds="18" invocations="42" avgMicrosecondsPerInvocation="448" maxMicrosecondsPerInvocation="2539" standardDeviationMicrosecondsPerInvocation="604"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="18" invocations="42" avgMicrosecondsPerInvocation="447" maxMicrosecondsPerInvocation="3900" standardDeviationMicrosecondsPerInvocation="781"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.custom.CustomInjectionDetector" totalMilliseconds="18" invocations="42" avgMicrosecondsPerInvocation="443" maxMicrosecondsPerInvocation="3395" standardDeviationMicrosecondsPerInvocation="688"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="18" invocations="183" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="2667" standardDeviationMicrosecondsPerInvocation="258"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="17" invocations="183" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="7260" standardDeviationMicrosecondsPerInvocation="617"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.DeletingWhileIterating" totalMilliseconds="17" invocations="42" avgMicrosecondsPerInvocation="425" maxMicrosecondsPerInvocation="3223" standardDeviationMicrosecondsPerInvocation="608"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.LocalSynchronizedCollection" totalMilliseconds="17" invocations="42" avgMicrosecondsPerInvocation="418" maxMicrosecondsPerInvocation="2843" standardDeviationMicrosecondsPerInvocation="594"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.smtp.SmtpHeaderInjectionDetector" totalMilliseconds="17" invocations="42" avgMicrosecondsPerInvocation="411" maxMicrosecondsPerInvocation="2320" standardDeviationMicrosecondsPerInvocation="603"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.crypto.cipher.DesUsageDetector" totalMilliseconds="17" invocations="42" avgMicrosecondsPerInvocation="410" maxMicrosecondsPerInvocation="4033" standardDeviationMicrosecondsPerInvocation="718"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.sql.AndroidSqlInjectionDetector" totalMilliseconds="16" invocations="42" avgMicrosecondsPerInvocation="403" maxMicrosecondsPerInvocation="2668" standardDeviationMicrosecondsPerInvocation="580"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.FieldCouldBeLocal" totalMilliseconds="16" invocations="42" avgMicrosecondsPerInvocation="403" maxMicrosecondsPerInvocation="8480" standardDeviationMicrosecondsPerInvocation="1344"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.formatter.FormatStringManipulationDetector" totalMilliseconds="16" invocations="42" avgMicrosecondsPerInvocation="401" maxMicrosecondsPerInvocation="2325" standardDeviationMicrosecondsPerInvocation="586"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.xml.StdXmlTransformDetector" totalMilliseconds="16" invocations="42" avgMicrosecondsPerInvocation="393" maxMicrosecondsPerInvocation="2251" standardDeviationMicrosecondsPerInvocation="506"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.HttpResponseSplittingDetector" totalMilliseconds="16" invocations="42" avgMicrosecondsPerInvocation="391" maxMicrosecondsPerInvocation="3413" standardDeviationMicrosecondsPerInvocation="642"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.HangingExecutors" totalMilliseconds="16" invocations="42" avgMicrosecondsPerInvocation="387" maxMicrosecondsPerInvocation="3845" standardDeviationMicrosecondsPerInvocation="729"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.http.HttpParameterPollutionDetector" totalMilliseconds="15" invocations="42" avgMicrosecondsPerInvocation="379" maxMicrosecondsPerInvocation="2375" standardDeviationMicrosecondsPerInvocation="586"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.script.ScriptInjectionDetector" totalMilliseconds="15" invocations="42" avgMicrosecondsPerInvocation="378" maxMicrosecondsPerInvocation="2256" standardDeviationMicrosecondsPerInvocation="515"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.crypto.cipher.RsaNoPaddingDetector" totalMilliseconds="15" invocations="42" avgMicrosecondsPerInvocation="377" maxMicrosecondsPerInvocation="4128" standardDeviationMicrosecondsPerInvocation="729"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.trust.TrustBoundaryViolationAttributeDetector" totalMilliseconds="15" invocations="42" avgMicrosecondsPerInvocation="373" maxMicrosecondsPerInvocation="2588" standardDeviationMicrosecondsPerInvocation="528"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.PossiblyRedundantMethodCalls" totalMilliseconds="15" invocations="42" avgMicrosecondsPerInvocation="372" maxMicrosecondsPerInvocation="3044" standardDeviationMicrosecondsPerInvocation="631"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="15" invocations="68" avgMicrosecondsPerInvocation="228" maxMicrosecondsPerInvocation="1775" standardDeviationMicrosecondsPerInvocation="310"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.BuryingLogic" totalMilliseconds="15" invocations="42" avgMicrosecondsPerInvocation="364" maxMicrosecondsPerInvocation="6715" standardDeviationMicrosecondsPerInvocation="1118"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.scala.ScalaSensitiveDataExposureDetector" totalMilliseconds="15" invocations="42" avgMicrosecondsPerInvocation="362" maxMicrosecondsPerInvocation="2466" standardDeviationMicrosecondsPerInvocation="522"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.PotentialValueDetector" totalMilliseconds="15" invocations="42" avgMicrosecondsPerInvocation="359" maxMicrosecondsPerInvocation="2328" standardDeviationMicrosecondsPerInvocation="532"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.aws.AwsQueryInjectionDetector" totalMilliseconds="15" invocations="42" avgMicrosecondsPerInvocation="358" maxMicrosecondsPerInvocation="2437" standardDeviationMicrosecondsPerInvocation="534"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.ldap.LdapInjectionDetector" totalMilliseconds="15" invocations="42" avgMicrosecondsPerInvocation="358" maxMicrosecondsPerInvocation="2466" standardDeviationMicrosecondsPerInvocation="523"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.crlf.CrlfLogInjectionDetector" totalMilliseconds="14" invocations="42" avgMicrosecondsPerInvocation="350" maxMicrosecondsPerInvocation="2306" standardDeviationMicrosecondsPerInvocation="509"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.crypto.ErrorMessageExposureDetector" totalMilliseconds="14" invocations="42" avgMicrosecondsPerInvocation="348" maxMicrosecondsPerInvocation="6228" standardDeviationMicrosecondsPerInvocation="952"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.password.IntuitiveHardcodePasswordDetector" totalMilliseconds="14" invocations="42" avgMicrosecondsPerInvocation="347" maxMicrosecondsPerInvocation="2918" standardDeviationMicrosecondsPerInvocation="591"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.scala.SSRFDetector" totalMilliseconds="14" invocations="42" avgMicrosecondsPerInvocation="347" maxMicrosecondsPerInvocation="2388" standardDeviationMicrosecondsPerInvocation="522"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
