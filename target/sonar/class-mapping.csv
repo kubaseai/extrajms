@@ -7,3 +7,6 @@ kuba.eai.jms.clients.common.Message:29,src/main/java/kuba/eai/jms/clients/common
 kuba.eai.jms.clients.common.TheConnection:-1,src/main/java/kuba/eai/jms/clients/common/TheConnection.java:-1
 kuba.eai.jms.clients.ems.Tibjms2TopicSubscriber:-1,src/main/java/kuba/eai/jms/clients/ems/Tibjms2TopicSubscriber.java:-1
 kuba.eai.jms.clients.kafka.KafkaConsumer:-1,src/main/java/kuba/eai/jms/clients/kafka/KafkaConsumer.java:-1
+kuba.eai.jms.clients.kafka.tests.Icf:26,src/main/java/kuba/eai/jms/clients/kafka/tests/Icf.java:26
+kuba.eai.jms.clients.kafka.tests.Icf:33,src/main/java/kuba/eai/jms/clients/kafka/tests/Icf.java:33
+kuba.eai.jms.clients.kafka.tests.Icf:27,src/main/java/kuba/eai/jms/clients/kafka/tests/Icf.java:27

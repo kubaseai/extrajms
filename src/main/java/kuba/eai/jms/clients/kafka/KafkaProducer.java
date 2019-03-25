@@ -46,7 +46,9 @@ public class KafkaProducer implements javax.jms.MessageProducer, TopicPublisher,
 	}
 	
 	@Override
-	public void close() throws JMSException {}
+	public void close() throws JMSException {
+		/* nothing to be done here */
+	}
 
 	@Override
 	public int getDeliveryMode() throws JMSException {
@@ -93,12 +95,7 @@ public class KafkaProducer implements javax.jms.MessageProducer, TopicPublisher,
 		sendWithParams(dest, msg, deliveryMode, priority, ttl, null);		
 	}
 
-	public void sendWithParams(Destination d, Message m, int deliveryMode, int priority, long ttl, Callback cb) throws JMSException {
-		if (d==null)
-			throw new JMSException("Destination cannot be null");
-		kuba.eai.jms.clients.common.Message msg = (kuba.eai.jms.clients.common.Message) m;
-		if (msg==null)
-			throw new JMSException("Message cannot be null");
+	private ProducerRecord<String,String> enrichMessage(kuba.eai.jms.clients.common.Message msg, Destination d) throws JMSException {
 		String msgId = msg.getJMSMessageID();
 		if (msgId==null)
 			msgId = UUID.randomUUID().toString();
@@ -125,6 +122,16 @@ public class KafkaProducer implements javax.jms.MessageProducer, TopicPublisher,
 					}
 			}
 		}
+		return record;
+	}
+
+	public void sendWithParams(Destination d, Message m, int deliveryMode, int priority, long ttl, Callback cb) throws JMSException {
+		if (d==null)
+			throw new JMSException("Destination cannot be null");
+		kuba.eai.jms.clients.common.Message msg = (kuba.eai.jms.clients.common.Message) m;
+		if (msg==null)
+			throw new JMSException("Message cannot be null");
+		ProducerRecord<String,String> record = enrichMessage(msg, d);
 		org.apache.kafka.clients.producer.KafkaProducer<String,String> producer = sess.getProducerForDeliveryMode(deliveryMode);
 		if (Boolean.FALSE.equals(trInited.get())) {
 			producer.initTransactions();

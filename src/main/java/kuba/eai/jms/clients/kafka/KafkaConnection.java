@@ -91,7 +91,7 @@ public class KafkaConnection extends ConnectionImpl {
 	protected KafkaConnection() {}
 	
 	private final static void sanitizeProperties(Properties p, String def) {
-		LinkedList<String> toBeRemoved = new LinkedList<>();
+		var toBeRemoved = new LinkedList<String>();
 		for (Object key : p.keySet()) {
 			if (def.indexOf(" "+key+" ")==-1)
 				toBeRemoved.add(key.toString());

@@ -32,7 +32,6 @@ kuba\eai\jms\clients\ems\tests\Jms2.class
 kuba\eai\jms\clients\ems\Tibjms2.class
 kuba\eai\jms\clients\kafka\tests\Consistency2.class
 kuba\eai\jms\clients\kafka\KafkaConsumer$1.class
-kuba\eai\jms\clients\common\Logger$1.class
 kuba\eai\jms\clients\ems\Tibjms2TopicAsQueue.class
 kuba\eai\jms\clients\ems\Tibjms2TopicSubscriber.class
 kuba\eai\jms\clients\kafka\KafkaConnection.class
